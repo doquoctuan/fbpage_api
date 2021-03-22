@@ -14,7 +14,7 @@ namespace DetailsPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            var request = WebRequest.Create("https://graph.facebook.com/utc2hcmc/posts?access_token=EAAAAZAw4FxQIBANSjvi4KIFmMIBc2IEiR9dpYLxnMXaR0w7a8qKYlSzHwkTBAMKw2qbR3fcZCh20powxvhbPAYufY4PEgRUHILNxFZBBzcXQwjJ01XbQnEHZB8GCjJeyzNUgcPBMyMKJGOEDzQRlcAE3DsZAUe68sBLn7HTEelsIV5TZAUeRuKCKdrX0Iz67gZD");
+            var request = WebRequest.Create("https://graph.facebook.com/utc2hcmc/posts?access_token=<ACCESS_TOKEN>");
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             Stream dataStream = response.GetResponseStream();
             StreamReader reader = new StreamReader(dataStream);
